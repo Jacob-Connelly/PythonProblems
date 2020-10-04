@@ -2,6 +2,8 @@ game = True;
 
 while game:
     while game:
+        count = 1;
+        print("Round {}".format(count))
         print("Please input Rock, Paper, or Scissors")
         p1 = input("Player 1:")
         p2 = input("Player 2:")
@@ -29,6 +31,7 @@ while game:
             else:
                 print("Player 2 wins!")
                 break
+        count += 1
 
     play = input("Would you like to play again(y/n)?")
     if play == "y":
